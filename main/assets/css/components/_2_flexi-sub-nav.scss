@@ -1,0 +1,38 @@
+@use '../base' as *;
+@use '_1_sub-navigation.scss' as *;
+@use '_1_expandable-search.scss' as *;
+
+/* -------------------------------- 
+
+File#: _2_flexi-sub-navigation
+Title: Flexi Sub Navigation
+Descr: Secondary navigation template
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.flexi-subnav__social {
+  --size: 2em;
+  width: var(--size);
+  height: var(--size);
+
+  display: flex;
+  
+  border-radius: 50%;
+  background-color: var(--color-bg-dark);
+  text-decoration: none;
+  color: var(--color-contrast-medium); // icon color
+
+  transition: .2s;
+
+  .icon {
+    --size: 1em;
+    margin: auto;
+  }
+
+  &:hover {
+    background-color: var(--color-bg-light);
+    box-shadow: var(--shadow-md);
+    color: var(--color-contrast-higher);
+  }
+}
