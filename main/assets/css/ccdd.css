@@ -26,3 +26,11 @@
 .fourohfour-text{
     color: black;
 }
+
+.contact-form{
+    padding: 5vh 15vw;
+}
+
+.hidden{
+    display: none;
+}
