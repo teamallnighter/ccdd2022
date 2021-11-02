@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "scripts": {
     "gulp": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gulp sass && gulp scripts && ntl deploy --prod",
+    "build-deploy": "ntl build && ntl deploy --prod",
+    "dev": "npm run gulp watch",
+    "build-deploy-redev": "npm run build-deploy && npm run dev"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.3",
@@ -20,6 +24,6 @@
     "gulp-uglify": "^3.0.2",
     "postcss-calc": "^7.0.1",
     "postcss-css-variables": "git+https://github.com/CodyHouse/postcss-css-variables",
-    "sass-embedded": "^1.0.0-beta.3"
+    "sass-embedded": "^1.0.0-beta.4"
   }
 }

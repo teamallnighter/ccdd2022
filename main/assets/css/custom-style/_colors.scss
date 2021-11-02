@@ -43,18 +43,18 @@
   @include defineColorHSL(--color-error-lighter, 349, 75%, 67%);
 
   // background
-  @include defineColorHSL(--color-bg-darker, 0, 0%, 89%);
-  @include defineColorHSL(--color-bg-dark, 0, 0%, 93%);
-  @include defineColorHSL(--color-bg, 0, 0%, 100%);
-  @include defineColorHSL(--color-bg-light, 0, 0%, 100%);
-  @include defineColorHSL(--color-bg-lighter, 0, 0%, 100%);
+  @include defineColorHSL(--color-bg-darker, 0, 0%, 17%);
+  @include defineColorHSL(--color-bg-dark, 0, 0%, 20%);
+  @include defineColorHSL(--color-bg, 0, 0%, 24%);
+  @include defineColorHSL(--color-bg-light, 0, 0%, 28%);
+  @include defineColorHSL(--color-bg-lighter, 0, 0%, 31%);
 
   // color contrasts
-  @include defineColorHSL(--color-contrast-lower, 0, 0%, 83%);
-  @include defineColorHSL(--color-contrast-low, 0, 0%, 62%);
-  @include defineColorHSL(--color-contrast-medium, 0, 0%, 43%);
-  @include defineColorHSL(--color-contrast-high, 0, 0%, 17%);
-  @include defineColorHSL(--color-contrast-higher, 0, 0%, 0%);
+  @include defineColorHSL(--color-contrast-lower, 0, 0%, 34%);
+  @include defineColorHSL(--color-contrast-low, 0, 0%, 48%);
+  @include defineColorHSL(--color-contrast-medium, 0, 0%, 63%);
+  @include defineColorHSL(--color-contrast-high, 0, 0%, 85%);
+  @include defineColorHSL(--color-contrast-higher, 0, 0%, 100%);
 
   // gradients
   @include defineColorHSL(--gradient-primary-stop-1, 360, 80%, 45%);

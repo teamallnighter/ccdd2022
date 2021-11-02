@@ -1,54 +1,28 @@
-.intro-page{
+.responsive-container{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    min-height: 100vh;
-}
-
-.intro-overlay{
-    background-color: rgba(255, 251, 251, 0.521);
-    border-radius: 20px;
-    padding: 30px 20px;
-    box-shadow: 2px 2px 8px inset;
-}
-
-.intro-text{
-    color: black;
-}
-
-.intro-buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-    
-.intro-link{
-    color: black;
-}
-
-#testimonials{
-    box-shadow: 2px 4px 4px rgba(128, 128, 128, 0.329);
-}
-
-.responsive-design, .portfolio, .services .seo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     height: 100vh;
 }
 
-.contact-form{
-    margin: 10vh 15vw;
+.fourohfour-container, .fourohfour, fourohfour-text-componant{
+    background-color: white;
+    color: black;
+    height: 100vh;
+
 }
 
-.middle-me{
-    margin-top: 5vh;
-
+.image-wrapper-four{    
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.fourohfour-img{
+    bottom: 0;
+    margin-top: 12vh;
+}
+
+.fourohfour-text{
+    color: black;
 }

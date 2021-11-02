@@ -12,6 +12,7 @@ Usage: codyhouse.co/license
 :root {
   --search-input-btn-width: 2.2em;
   --search-input-icon-size: 1em;
+  --search-input-shortcut-margin: 0.325em; /* gap between the shortcut badge and the input edges */
 }
 
 .search-input {
@@ -65,7 +66,7 @@ Usage: codyhouse.co/license
     --size: var(--search-input-icon-size);
     margin-left: auto;
     margin-right: auto;
-    color: var(--color-contrast-low); // icon color
+    color: var(--color-contrast-low); /* icon color */
     transition: .2s;
   }
 
@@ -78,5 +79,25 @@ Usage: codyhouse.co/license
 
 .search-input__btn:focus .icon,
 .search-input .search-input__input:focus + .search-input__btn .icon {
-  color: var(--color-primary); // active icon color
+  color: var(--color-primary); /* active icon color */
+}
+
+/* --shortcut */
+.search-input__shortcut {
+  position: absolute;
+  right: var(--search-input-shortcut-margin);
+  top: var(--search-input-shortcut-margin);
+  height: calc(100% - var(--search-input-shortcut-margin)*2);
+  display: flex;
+  align-items: center;
+
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-contrast-lower);
+  border-radius: var(--radius-sm);
+
+  --space-unit: 1em;
+  padding: 0 var(--space-xxxs);
+
+  line-height: 1;
+  color: var(--color-contrast-medium);
 }

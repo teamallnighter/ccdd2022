@@ -68,8 +68,9 @@ Usage: codyhouse.co/license
 }
 
 .modal__close-btn--inner { // close button - inside the modal__content
-  width: 2em;
-  height: 2em;
+  --size: 32px;
+  width: var(--size);
+  height: var(--size);
   background-color: var(--color-bg-light);
   box-shadow: var(--inner-glow), var(--shadow-sm);
   transition: .2s;

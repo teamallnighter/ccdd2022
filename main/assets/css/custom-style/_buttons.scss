@@ -35,12 +35,13 @@
 
 // themes
 .btn--primary {
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-bg);
   box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), var(--shadow-xs);
 
   &:hover {
-    background: var(--color-primary-light);
+    background: var(--color-bg-lighter);
+    color: var(--color-white);
     box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), var(--shadow-sm);
   }
 

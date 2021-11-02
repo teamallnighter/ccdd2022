@@ -24,13 +24,18 @@ Usage: codyhouse.co/license
   height: var(--f-header-height);
   width: 100%;
   z-index: var(--z-index-header, 3); 
+
+  &::before { /* used in JS to detect menu style */
+    display: none;
+    content: 'mobile';
+  }
 }
 
 .f-header--expanded {
-  // class added when navigation is visible - small devices only
+  /* class added when navigation is visible - small devices only */
 }
 
-.f-header__mobile-content { // logo + menu button on small devices
+.f-header__mobile-content { /* logo + menu button on small devices */
   position: relative;
   display: flex;
   height: 100%;
@@ -50,9 +55,9 @@ Usage: codyhouse.co/license
   }
 }
 
-.f-header__nav-control { // menu button
+.f-header__nav-control { /* menu button */
   --anim-menu-btn-size: 40px;
-  // 🍔 icon
+  /* 🍔 icon */
   --anim-menu-btn-icon-size: 28px;
   --anim-menu-btn-icon-stroke: 2px;
 }
@@ -69,14 +74,13 @@ Usage: codyhouse.co/license
   padding: 0 0 var(--space-md);
   background-color: var(--color-bg);
   box-shadow: var(--shadow-md);
-  font-size: var(--text-md); // edit font size of all nav elements
   z-index: 1;
 
   visibility: hidden;
   opacity: 0;
   transform: translateY(-1em);
 
-  &::before { // top header bg + border
+  &::before { /* top header bg + border */
     content: '';
     display: block;
     position: sticky;
@@ -95,7 +99,7 @@ Usage: codyhouse.co/license
 }
 
 .f-header__nav-logo-wrapper {
-  display: none; // hide logo nav on small devices
+  display: none; /* hide logo nav on small devices */
 }
 
 .f-header__item {
@@ -104,14 +108,29 @@ Usage: codyhouse.co/license
 }
 
 .f-header__dropdown-icon {
-  display: none; // hide dropdown arrow on smaller screens
+  --size: 16px;
+  flex-shrink: 0;
+  margin: 0 10px 0 auto;
+  display: none; /* hide on mobile if link */
+
+  .f-header__dropdown-control & {
+    display: block;
+  }
 }
 
 .f-header__link,
+.f-header__dropdown-control,
+.f-header__dropdown-link,
+.f-header__btn,
+.f-header__form-control {
+  font-size: var(--text-md);
+}
+
+.f-header__link,
+.f-header__dropdown-control,
 .f-header__dropdown-link {
-  display: block;
   display: flex;
-  align-items: center; // align icon with text
+  align-items: center;
   color: var(--color-contrast-high);
   text-decoration: none;
   padding: var(--space-xs) 0;
@@ -119,10 +138,6 @@ Usage: codyhouse.co/license
   &:hover,
   &[aria-current="page"] {
     color: var(--color-primary);
-  }
-
-  .icon {
-    flex-shrink: 0;
   }
 }
 
@@ -132,17 +147,35 @@ Usage: codyhouse.co/license
   margin: var(--space-xs) 0;
 }
 
-.f-header__dropdown { // sub navigation
-  padding-left: var(--space-md); // offset sub nav
+.f-header__dropdown-control {
+  width: 100%;
+}
+
+.f-header__dropdown { /* sub navigation */
+  padding-left: var(--space-md); /* offset sub nav */
+}
+
+.f-header__dropdown-control {
+  + .f-header__dropdown {
+    display: none;
+  }
+
+  &[aria-expanded="true"] + .f-header__dropdown {
+    display: block;
+  }
 }
 
 @include breakpoint(md) {
+  .f-header::before {
+    content: 'desktop';
+  }
+
   .f-header__mobile-content {
-    display: none; // hide logo + menu (mobile content)
+    display: none; /* hide logo + menu (mobile content) */
   }
 
   .f-header__nav {
-    // reset
+    /* reset */
     position: static;
     padding: 0;
     background-color: transparent;
@@ -154,18 +187,14 @@ Usage: codyhouse.co/license
     max-height: none;
     overflow: visible;
     overscroll-behavior: auto;
-
-    // new style
     height: var(--f-header-height);
-    font-size: 0.875em; // edit font size of all nav elements
 
-    &::before { // reset
+    &::before { /* reset */
       display: none;
     }
   }
 
   .f-header__nav-logo-wrapper {
-    display: block; // fallback
     display: flex;
   }
 
@@ -180,10 +209,9 @@ Usage: codyhouse.co/license
   }
 
   .f-header__item {
-    display: inline-block; // fallback
     position: relative;
     border-bottom: none;
-    margin-right: var(--space-xs); // margin between nav items
+    margin-right: var(--space-xs); /* margin between nav items */
 
     &:last-child {
       margin-right: 0;
@@ -191,11 +219,17 @@ Usage: codyhouse.co/license
   }
 
   .f-header__dropdown-icon {
+    --size: 12px;
     display: block;
-    margin-left: var(--space-xxxxs);
-    width: 12px;
-    height: 12px;
-    flex-shrink: 0;
+    margin: 0 0 0 var(--space-xxxxs);
+  }
+
+  .f-header__link,
+  .f-header__dropdown-control,
+  .f-header__dropdown-link,
+  .f-header__btn,
+  .f-header__form-control {
+    font-size: 1.125rem;
   }
 
   .f-header__link {
@@ -204,33 +238,37 @@ Usage: codyhouse.co/license
 
   .f-header__link--icon {
     span {
-      display: none;
+      display: none; /* hide icon label */
     }
   }
 
   .f-header__btn,
   .f-header__form-control {
-    margin: 0; // reset
+    margin: 0; /* reset */
   }
 
   .f-header__dropdown {
-    font-size: 1rem;
     position: absolute;
     top: 100%;
-    width: 200px;
-    left: calc(50% - 100px);
+    width: 220px;
+    left: calc(50% - 110px);
     padding: var(--space-xxxs) 0;
     background-color: var(--color-bg-light);
     border-radius: var(--radius-md);
     box-shadow: var(--inner-glow), var(--shadow-md);
     z-index: var(--z-index-popover, 5); 
 
-    // hide
+    /* hide */
     visibility: hidden;
     opacity: 0;
     transition: visibility .2s .2s, opacity .2s 0s;
 
-    .f-header__item:hover & {
+    .f-header__dropdown-control + & {
+      display: block; /* reset style */
+    }
+
+    .f-header__item:hover &,
+    .f-header__dropdown-control[aria-expanded="true"] + & {
       visibility: visible;
       opacity: 1;
       transition: visibility .2s 0s, opacity .2s 0s;
