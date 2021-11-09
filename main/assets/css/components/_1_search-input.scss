@@ -101,3 +101,7 @@ Usage: codyhouse.co/license
   line-height: 1;
   color: var(--color-contrast-medium);
 }
+
+.search-input:focus-within .search-input__shortcut {
+  display: none;
+}

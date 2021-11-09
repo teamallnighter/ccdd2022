@@ -8,22 +8,20 @@
 
 :root {
   // font family
-  --font-primary: 'Oswald', sans-serif;
-  --font-secondary: 'Open Sans', sans-serif;
-  --font-tertiary: 'Oswald', sans-serif;
+  --font-primary: 'Dongle', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
 
   // font size
   --text-base-size: 1em; // body font-size
   --text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
   
   // line-height
-  --body-line-height: 1.4;
+  --body-line-height: 1.25;
   --heading-line-height: 1.2;
   
   // capital letters - used in combo with the lhCrop mixin
   --font-primary-capital-letter: 1;
-  --font-secondary-capital-letter: 1;
-  --font-tertiary-capital-letter: 1;
+  --font-secondary-capital-letter: 1.25;
 
   // unit - don't modify unless you want to change the typography unit (e.g., from Rem to Em units)
   --text-unit: 1em; // if Em units → --text-unit: 1em;
@@ -42,15 +40,43 @@
 }
 
 
+@include breakpoint(xs) {
+  :root {
+    --text-base-size: .5em;
+    --text-scale-ratio: .5;
+  }
+}
+
+@include breakpoint(sm) {
+  :root {
+    --text-base-size: .75em;
+    --text-scale-ratio: .75;
+  }
+}
+
 @include breakpoint(md) {
+  :root {
+    --text-base-size: 1em;
+    --text-scale-ratio: 1;
+  }
+}
+
+@include breakpoint(lg) {
   :root {
     --text-base-size: 1.25em;
     --text-scale-ratio: 1.25;
   }
 }
 
+@include breakpoint(xl) {
+  :root {
+    --text-base-size: 1.5em;
+    --text-scale-ratio: 1.25;
+  }
+}
+
 body {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
 }
 
 h1, h2, h3, h4 {
@@ -61,7 +87,33 @@ h1, h2, h3, h4 {
 // font family
 .font-primary { font-family: var(--font-primary); }
 .font-secondary { font-family: var(--font-secondary); }
-.font-tertiary { font-family: var(--font-tertiary); }
+
+// color
+.color-nerd-blue-darker { color: alpha(var(--color-nerd-blue-darker), var(--color-o, 1)); }
+.color-nerd-blue-dark { color: alpha(var(--color-nerd-blue-dark), var(--color-o, 1)); }
+.color-nerd-blue { color: alpha(var(--color-nerd-blue), var(--color-o, 1)); }
+.color-nerd-blue-light { color: alpha(var(--color-nerd-blue-light), var(--color-o, 1)); }
+.color-nerd-blue-lighter { color: alpha(var(--color-nerd-blue-lighter), var(--color-o, 1)); }
+.color-red-head-darker { color: alpha(var(--color-red-head-darker), var(--color-o, 1)); }
+.color-red-head-dark { color: alpha(var(--color-red-head-dark), var(--color-o, 1)); }
+.color-red-head { color: alpha(var(--color-red-head), var(--color-o, 1)); }
+.color-red-head-light { color: alpha(var(--color-red-head-light), var(--color-o, 1)); }
+.color-red-head-lighter { color: alpha(var(--color-red-head-lighter), var(--color-o, 1)); }
+.color-in-the-pink-darker { color: alpha(var(--color-in-the-pink-darker), var(--color-o, 1)); }
+.color-in-the-pink-dark { color: alpha(var(--color-in-the-pink-dark), var(--color-o, 1)); }
+.color-in-the-pink { color: alpha(var(--color-in-the-pink), var(--color-o, 1)); }
+.color-in-the-pink-light { color: alpha(var(--color-in-the-pink-light), var(--color-o, 1)); }
+.color-in-the-pink-lighter { color: alpha(var(--color-in-the-pink-lighter), var(--color-o, 1)); }
+.color-stick-icky-darker { color: alpha(var(--color-stick-icky-darker), var(--color-o, 1)); }
+.color-stick-icky-dark { color: alpha(var(--color-stick-icky-dark), var(--color-o, 1)); }
+.color-stick-icky { color: alpha(var(--color-stick-icky), var(--color-o, 1)); }
+.color-stick-icky-light { color: alpha(var(--color-stick-icky-light), var(--color-o, 1)); }
+.color-stick-icky-lighter { color: alpha(var(--color-stick-icky-lighter), var(--color-o, 1)); }
+.color-not-black-darker { color: alpha(var(--color-not-black-darker), var(--color-o, 1)); }
+.color-not-black-dark { color: alpha(var(--color-not-black-dark), var(--color-o, 1)); }
+.color-not-black { color: alpha(var(--color-not-black), var(--color-o, 1)); }
+.color-not-black-light { color: alpha(var(--color-not-black-light), var(--color-o, 1)); }
+.color-not-black-lighter { color: alpha(var(--color-not-black-lighter), var(--color-o, 1)); }
 
 // gradient
 .color-gradient-primary-top { background-image: linear-gradient(0deg, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2)); }

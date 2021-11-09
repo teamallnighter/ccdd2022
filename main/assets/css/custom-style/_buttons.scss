@@ -7,8 +7,8 @@
 // --------------------------------
 
 :root {
-  --btn-font-size: 1em;
-  --btn-padding-x: var(--space-sm);
+  --btn-font-size: 1.2em;
+  --btn-padding-x: var(--space-md);
   --btn-padding-y: var(--space-xxs);
   --btn-radius: var(--radius-md);
 }
@@ -17,11 +17,22 @@
   background: var(--color-bg-dark);
   color: var(--color-contrast-higher);
   cursor: pointer;
+  font-family: var(--font-primary);
+  text-transform: capitalize;
   text-decoration: none;
-  line-height: 1.2;
+  line-height: 1;
   @include fontSmooth;
-  transition: all 0.2s ease;
+  box-shadow: var(--shadow-xs);
+  outline-offset: 1;
+  transition: all s ease;
   will-change: transform;
+
+  &:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+    box-shadow: var(--shadow-xl);
+    transition: box-shadow 0.3s var(--ease-in) 0.5s, background 0.3s var(--ease-in-out), color 0.5s var(--ease-in-out);
+  }
 
   &:focus {
     box-shadow: 0px 0px 0px 2px alpha(var(--color-contrast-higher), 0.15);
@@ -35,14 +46,22 @@
 
 // themes
 .btn--primary {
-  background: var(--color-white);
-  color: var(--color-bg);
-  box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), var(--shadow-xs);
+  background: var(--color-bg-dark);
+  color: var(--color-not-black-darker);
+  border-radius: var(--radius-md);
+  padding: var(--space-xxs) var(--space-md);
+  font-family: var(--font-primary);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  line-height: 1;
+  @include fontSmooth;
 
   &:hover {
-    background: var(--color-bg-lighter);
-    color: var(--color-white);
-    box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), var(--shadow-sm);
+    background: var(--color-black);
+    color: var(--color-bg-dark);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-lg);
   }
 
   &:focus {
@@ -51,12 +70,13 @@
 }
 
 .btn--subtle {
-  background: var(--color-bg-light);
-  color: var(--color-contrast-higher);
+  background: var(--color-bg-lighter);
+  color: var(--color-contrast-high);
   box-shadow: inset 0px 0px 0px 1px var(--color-contrast-lower), var(--shadow-xs);
 
   &:hover {
-    background: var(--color-bg-lighter);
+    background: var(--color-bg);
+    color: var(--color-contrast-low);
     box-shadow: inset 0px 0px 0px 1px var(--color-contrast-lower), var(--shadow-sm);
   }
 
@@ -66,12 +86,13 @@
 }
 
 .btn--accent {
-  background: var(--color-accent);
-  color: var(--color-white);
+  background: var(--color-bg-dark);
+  color: var(--color-in-the-pink-darker);
   box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), var(--shadow-xs);
 
   &:hover {
-    background: var(--color-accent-light);
+    background: var(--color-in-the-pink);
+    color: var(--color-black);
     box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), var(--shadow-sm);
   }
 

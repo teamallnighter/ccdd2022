@@ -1,13 +1,14 @@
 {
   "name": "chrisconnellydotdev",
+  "author": "Chris Connelly <me@chrisconnelly.dev> (https://chrisconnelly.dev/)",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teamallnighter/ccdd2022"
+  },
   "scripts": {
     "gulp": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gulp sass && gulp scripts && ntl deploy --prod",
-    "build-deploy": "ntl build && ntl deploy --prod",
-    "dev": "npm run gulp watch",
-    "build-deploy-redev": "npm run build-deploy && npm run dev"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.3",

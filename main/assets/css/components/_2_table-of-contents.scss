@@ -10,19 +10,19 @@ Usage: codyhouse.co/license
 
 -------------------------------- */
 :root {
-  --toc-border-width: 1px; // static version only
+  --toc-border-width: 1px; /* static version only */
 }
 
 /* #region (style affecting collapsed + static versions) 👇 */
 .toc {
-  @include spaceUnit(1rem); // use rem units for spacing
+  @include spaceUnit(1rem); /* use rem units for spacing */
 }
 
 .toc__list {
   position: relative;
 
   .toc__list .toc__link {
-    padding-left: calc(var(--space-sm) * 2); // offset sub nav
+    padding-left: calc(var(--space-sm) * 2); /* offset sub nav */
   }
 }
 
@@ -35,11 +35,8 @@ Usage: codyhouse.co/license
   position: relative;
   color: var(--color-contrast-medium);
   text-decoration: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
-  &::before { // left mark
+  &::before { /* left mark */
     content: '';
     width: var(--toc-border-width);
     height: 100%;
@@ -61,21 +58,20 @@ Usage: codyhouse.co/license
   }
 }
 
-.toc__label { // label style
+.toc__label { /* label style */
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: var(--text-sm);
 }
 
-.toc__control { // control button
+.toc__control { /* control button */
   width: 100%;
-  padding: var(--space-sm);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.toc__control-text { // text inside control button
+.toc__control-text { /* text inside control button */
   position: relative;
 
   > * {
@@ -93,7 +89,7 @@ Usage: codyhouse.co/license
   }
 }
 
-.toc__icon-arrow { // arrow icon 
+.toc__icon-arrow { /* arrow icon  */
   .icon__group {
     will-change: transform;
     transform-origin: 8px 8px;
@@ -108,11 +104,11 @@ Usage: codyhouse.co/license
     }
 
     > *:first-child {
-      stroke-dashoffset: 8.5;
+      stroke-dashoffset: 10;
     }
 
     > *:last-child {
-      stroke-dashoffset: 8.5;
+      stroke-dashoffset: 10;
     }
   }
 }
@@ -133,7 +129,7 @@ Usage: codyhouse.co/license
     box-shadow: var(--inner-glow), var(--shadow-md);
   }
 
-  .toc__nav { // navigation
+  .toc__nav { /* navigation */
     display: none;
     margin: var(--space-xxs) 0;
   }
@@ -170,7 +166,7 @@ Usage: codyhouse.co/license
       animation: toc-entry-animation .4s var(--ease-out);
     }
 
-    .toc__icon-arrow .icon__group { // animate arrow icon
+    .toc__icon-arrow .icon__group { /* animate arrow icon */
       transform: rotate(-90deg);
   
       > *:first-child, *:last-child {
@@ -184,19 +180,13 @@ Usage: codyhouse.co/license
 
 /* #region (static version only - desktop 👇) */
 .toc--static {
-  box-shadow: inset var(--toc-border-width) 0 0 var(--color-contrast-lower); // left border
+  box-shadow: inset var(--toc-border-width) 0 0 var(--color-contrast-lower); /* left border */
 
   &[class*="position-sticky"] {
-    top: var(--space-md); // used if position = sticky
-    max-height: calc(100vh - var(--space-md) * 2); // set max height
+    top: var(--space-md); /* used if position = sticky */
+    max-height: calc(100vh - var(--space-md) * 2); /* set max height */
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-  }
-
-  .toc-content {
-    *:target {
-      animation: toc-target 2s; // highlight section on target
-    }
   }
 
   .toc__label {
@@ -212,8 +202,14 @@ Usage: codyhouse.co/license
     background-color: var(--color-primary);
   }
 
-  .toc__control { // control - static version only
+  .toc__control { /* control - static version only */
     display: none;
+  }
+}
+
+.toc-content--toc-static {
+  *:target {
+    animation: toc-target 2s; /* highlight section on target */
   }
 }
 /* #endregion */
@@ -240,14 +236,14 @@ Usage: codyhouse.co/license
   }
 }
 
-// no-js support
+/* no-js support */
 html:not(.js) .toc {
   .toc__nav {
     display: block;
   }
 }
 
-// used in JS - detect when the TOC needs to switch from a collapsed to a static version
+/* used in JS - detect when the TOC needs to switch from a collapsed to a static version */
 [class*="toc--static"]::before {
   display: none;
   content: 'collapsed';

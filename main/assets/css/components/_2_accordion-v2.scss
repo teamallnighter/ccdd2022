@@ -12,8 +12,8 @@ Usage: codyhouse.co/license
 
 :root {
   // icon
-  --accordion-v2-icon-size: 1em;
-  --accordion-v2-icon-stroke-width: 1.5px;
+  --accordion-v2-icon-size: 20px;
+  --accordion-v2-icon-stroke-width: 2px;
 }
 
 .accordion-v2 {}
@@ -38,7 +38,7 @@ Usage: codyhouse.co/license
   cursor: pointer;
 
   .icon {
-    font-size: var(--accordion-v2-icon-size);
+    --size: var(--accordion-v2-icon-size);
 
     .icon__group {
       stroke-width: var(--accordion-v2-icon-stroke-width);
@@ -49,20 +49,20 @@ Usage: codyhouse.co/license
 .accordion-v2__icon-arrow {
   .icon__group {
     will-change: transform;
-    transform-origin: 8px 8px;
+    transform-origin: 50% 50%;
 
     > * {
-      transform-origin: 8px 8px;
-      stroke-dasharray: 17;
-      transform: translateY(3px);
+      transform-origin: 50% 50%;
+      stroke-dasharray: 20;
+      transform: translateY(4px);
     }
 
     > *:first-child {
-      stroke-dashoffset: 8.5;
+      stroke-dashoffset: 10.15;
     }
 
     > *:last-child {
-      stroke-dashoffset: 8.5;
+      stroke-dashoffset: 10.15;
     }
   }
 }
