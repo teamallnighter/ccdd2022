@@ -1,0 +1,45 @@
+#intro-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 500px;
+}
+
+
+#testimonial-1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro-icon{
+    text-shadow: var(var(--shadow-xl));
+}
+
+#difference{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#responsive{
+    height: 100vh;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+background-color: var(--color-primary);
+}
+
+#portfolio-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vw;
+}

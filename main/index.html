@@ -1,34 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title></title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Sen&amp;display=swap'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <script src="https://kit.fontawesome.com/05a8f14e1c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/switch.css">
+  <link rel="stylesheet" href="assets/css/ccdd_id.css">
+  <link rel="stylesheet" href="assets/css/ccdd_class.css">
 
+  <title>Get Started | CodyFrame</title>
 </head>
 
 <body>
-  <div id="main">
-    <h1>chrisConnellyDotDev</h1>
-    <div class="content">
-      <button>ENTER</button>
-      <p>You can press <kbd>▲</kbd> <kbd>▼</kbd> on your keyboard or swipe up/down to navigate. Mouse wheel works too.
-      </p>
-      <p><a href="https://codepen.io/teamallnighter" target="_blank">codepen</a> //
-        <a href="https://github.com/teamallnighter" target="_blank">Github</a> //
-        <a href="" target="_blank">Facebook</a>
-    </div>
-    <div class="buttons">
-      <button class="next" onclick="go(-1)"></button>
-      <button class="prev" onclick="go(1)"></button>
-    </div>
-  </div>
-  <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
-  <script src="assets/js/script.js"></script>
+  <!--INTRO-->
+  <main class="parallax">
+    <section class="hero  flex items-center margin-bottom-0 intro-section">
+      <div id="intro-section">
+        <div class="container" style="min-width: 90vw;">
+          <div class="text-center">
+            <div class="text-component">
+              <i class="fak fa-ccdd-logo-1 fa-5x text-shadow-1" id="intro-icon"></i>
+              <h1 class="text-shadow-1 text-xxxxl">Affordable Web Design</h1>
+              <p class="text-shadow-2 text-lg">It's time to change the way we look at IT and development</p>
+            </div>
+          </div>
+        </div>
+        <div class="margin-top-lg">
+          <div class="flex flex-wrap gap-sm items-center">
+            <a href="#0" class="btn btn--primary">Get A Quote</a>
+            <a href="#difference" class="btn btn--subtle">Learn more</a>
 
+          </div>
+        </div>
+      </div>
+      <div class="margin-top-xxl margin-bottom-0 padding-bottom-0" id="scrollDownDiv">
+        <a href="#testimonial-1"><i
+            class="fal fa-chevron-double-down fa-2x text-shadow-1 animate__animated margin-bottom-0 scrollDown"
+            id="scrollDown1"></i></a>
+      </div>
+    </section>
+
+    <!--TESTIMONIAL 1-->
+    <section class="testimonial position-relative z-index-1 padding-y-xxl" id="testimonial-1">
+      <div class="container max-width-adaptive-sm">
+        <figure class="flex justify-center margin-bottom-md reveal-fx reveal-fx--scale">
+          <img class="block width-xxl height-xxl radius-50% border border-bg border-2 shadow-sm"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQES8H6VtiadPw/profile-displayphoto-shrink_200_200/0/1541142233316?e=1641427200&v=beta&t=70vdcoA7Xt3bKrGFm2vS_tA8hunGDo6vEgNskzXz1Ug"
+            alt="Testimonial picture">
+        </figure>
+
+        <div class="testimonial__block-wrapper margin-bottom-lg">
+          <blockquote class="text-lg text-center line-height-md ">Chris is super awesome to work with, very personable,
+            he
+            gets things done with no hassle and really knows what he's doing. He has a really diverse skill set as well,
+            from creating API's, building apps and integrated functions to websites, complete website development,
+            programing, automation, and even business management. His work has been really valuable for us and would
+            fully
+            recommend him to anybody.</blockquote>
+
+          <svg class="icon icon--xxl color-contrast-higher opacity-10%" aria-hidden="true" viewBox="0 0 64 64">
+            <polygon fill="currentColor" points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36" />
+            <polygon fill="currentColor" points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36" />
+          </svg>
+        </div>
+
+
+        <div class="text-center">
+          <p class="text-uppercase letter-spacing-md"><strong>Dustin Poole</strong></p>
+          <p class="color-contrast-medium margin-top-xxxxs">Designer at CompanyX</p>
+        </div>
+      </div>
+      <div class="margin-top-xxl margin-bottom-0 padding-bottom-0" id="scrollDownDiv">
+        <a href="#difference"><i
+            class="fal fa-chevron-double-down fa-2x text-shadow-1 animate__animated margin-bottom-0 scrollDown"
+            id="scrollDown2"></i></a>
+      </div>
+    </section>
+
+    <section class="position-relative z-index-1 padding-y-lg" id="difference">
+      <h2 class="text-xxl">The Difference</h2>
+      <div class="container" style="max-width:80vw;">
+        <div class="grid gap-md">
+          <div class="col-6@md">
+            <div class="flex gap-sm">
+              <figure class="flex-shrink-0">
+                <img class="block width-xl width-xxl@md" src="assets/media/icons/money-bill-wave-light.svg"
+                  alt="Money Icon">
+              </figure>
+
+              <div class="text-component">
+                <h4>Feature One</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda doloribus eos
+                  provident modi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-6@md">
+            <div class="flex gap-sm">
+              <figure class="flex-shrink-0">
+                <img class="block width-xl width-xl@md" src="assets/media/icons/file-chart-pie-light.svg"
+                  alt="Report Icon">
+              </figure>
+
+              <div class="text-component">
+                <h4>Feature Two</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio inventore
+                  architecto.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6@md">
+            <div class="flex gap-sm">
+              <figure class="flex-shrink-0">
+                <img class="block width-xl width-xxl@md" src="assets/media/icons/band-aid-light.svg"
+                  alt="Image description">
+              </figure>
+
+              <div class="text-component">
+                <h4>Feature Three</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda doloribus eos
+                  provident modi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6@md">
+            <div class="flex gap-sm">
+              <figure class="flex-shrink-0">
+                <img class="block width-xl width-xl@md" src="assets/media/icons/blinds-light.svg"
+                  alt="Image description">
+              </figure>
+
+              <div class="text-component">
+                <h4>Feature Four</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio inventore
+                  architecto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="margin-top-xxl margin-bottom-0 padding-bottom-0" id="scrollDownDiv">
+        <a href="#difference"><i
+            class="fal fa-chevron-double-down fa-2x text-shadow-1 animate__animated margin-bottom-0 scrollDown"
+            id="scrollDown3"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <main>
+    <section class="position-relative z-index-1 min-height-100vh padding-y-xxl flex flex-center">
+      <div class="position-relative z-index-1 container max-width-sm">
+        <section class="testimonial position-relative z-index-1 padding-y-xxl">
+          <div class="container max-width-adaptive-sm">
+            <figure class="flex justify-center margin-bottom-md reveal-fx reveal-fx--scale">
+              <img class="block width-xxl height-xxl radius-50% border border-bg border-2 shadow-sm"
+                src="data:image/jpeg;base64,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"
+                alt="Testimonial picture">
+            </figure>
+
+            <div class="testimonial__block-wrapper margin-bottom-lg">
+              <blockquote class="text-lg text-center line-height-md ">Chris has redeveloped our website with fresh new
+                ideas and provided us with several options to expand or create a more interactive website for our
+                clients. The cost in doing so was very reasonable and the process was very smooth. Were happy with the
+                end result and look forward to continually redeveloping our website with new innovative ideas.
+              </blockquote>
+
+              <svg class="icon icon--xxl color-contrast-higher opacity-10%" aria-hidden="true" viewBox="0 0 64 64">
+                <polygon fill="currentColor" points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36" />
+                <polygon fill="currentColor" points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36" />
+              </svg>
+            </div>
+
+
+            <div class="text-center">
+              <p class="text-uppercase letter-spacing-md"><strong>Geoff Wright</strong></p>
+              <p class="color-contrast-medium margin-top-xxxxs">Owner: Guardian Condominium Care</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="noise-bg position-absolute inset-0" aria-hidden="true">
+        <svg>
+          <filter id="noise-bg-fx">
+            <feTurbulence baseFrequency="0.8" />
+          </filter>
+        </svg>
+      </div>
+    </section>
+    <section class="position-relative z-index-1 padding-y-xl" id="responsive">
+      <div class="container max-width-adaptive-lg">
+        <div class="grid gap-lg items-center">
+          <div class="col-5@md">
+            <div class="text-component">
+              <p class="text-sm color-contrast-medium">How it works</p>
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, rem neque doloribus impedit explicabo.
+              </p>
+            </div>
+
+            <div class="margin-top-sm">
+              <div class="flex flex-wrap gap-sm items-center">
+                <a href="#0" class="btn btn--primary">Download</a>
+                <a href="#0" class="color-inherit">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-7@md">
+            <div class="device-group-1">
+              <div class="dev-phone-3d-wrapper">
+
+                <div class="dev-phone dev-phone--top-light" aria-label="Image description">
+                  <div class="dev-phone__body">
+                    <div class="dev-phone__media">
+                      <div class="dev-phone__notch"></div>
+                      <svg viewBox="0 0 750 1334">
+                        <rect width="750" height="1334" fill="var(--color-contrast-lower)" />
+                        <path d="M130 850.633L436.4 544.233L620.24 850.633H130Z" fill="var(--color-contrast-medium)" />
+                        <path
+                          d="M192.328 606.56C226.172 606.56 253.608 579.124 253.608 545.28C253.608 511.436 226.172 484 192.328 484C158.484 484 131.048 511.436 131.048 545.28C131.048 579.124 158.484 606.56 192.328 606.56Z"
+                          fill="var(--color-contrast-medium)" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="dev-phone__shadow"></div>
+                </div>
+              </div>
+
+              <div class="dev-phone dev-phone--dark dev-phone--top-light" aria-label="Image description">
+                <div class="dev-phone__body">
+                  <div class="dev-phone__media">
+                    <div class="dev-phone__notch"></div>
+                    <svg viewBox="0 0 750 1334">
+                      <rect width="750" height="1334" fill="var(--color-contrast-lower)" />
+                      <path d="M130 850.633L436.4 544.233L620.24 850.633H130Z" fill="var(--color-contrast-medium)" />
+                      <path
+                        d="M192.328 606.56C226.172 606.56 253.608 579.124 253.608 545.28C253.608 511.436 226.172 484 192.328 484C158.484 484 131.048 511.436 131.048 545.28C131.048 579.124 158.484 606.56 192.328 606.56Z"
+                        fill="var(--color-contrast-medium)" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="dev-phone__shadow"></div>
+              </div>
+
+              <div class="dev-phone-3d-wrapper">
+
+                <div class="dev-phone dev-phone--top-light" aria-label="Image description">
+                  <div class="dev-phone__body">
+                    <div class="dev-phone__media">
+                      <div class="dev-phone__notch"></div>
+                      <svg viewBox="0 0 750 1334">
+                        <rect width="750" height="1334" fill="var(--color-contrast-lower)" />
+                        <path d="M130 850.633L436.4 544.233L620.24 850.633H130Z" fill="var(--color-contrast-medium)" />
+                        <path
+                          d="M192.328 606.56C226.172 606.56 253.608 579.124 253.608 545.28C253.608 511.436 226.172 484 192.328 484C158.484 484 131.048 511.436 131.048 545.28C131.048 579.124 158.484 606.56 192.328 606.56Z"
+                          fill="var(--color-contrast-medium)" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="dev-phone__shadow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="position-relative z-index-1 min-height-100vh padding-y-xxl flex flex-center bg-black">
+      <div class="position-relative z-index-1 container max-width-100">
+        <section class="position-relative z-index-1 padding-y-xl">
+          <div class="container" id="portfolio-wrapper">
+            <div class="grid gap-lg items-center">
+              <div class="col-5@md">
+                <div class="text-component">
+                  <p class="text-sm color-contrast-medium" style="color:var(--color-primary);"">How it works</p>
+                  <h2 style=" color:var(--color-primary-light);">Lorem ipsum</h2>
+                  <p style="color:var(--color-primary-dark);">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa,
+                    rem neque doloribus impedit
+                    explicabo.</p>
+                </div>
+
+                <div class="margin-top-sm">
+                  <div class="flex flex-wrap gap-sm items-center">
+                    <a href="https://portfolio.chrisconnelly.dev" target="_blank" class="btn btn--primary">My
+                      Portfolio</a>
+                    <a href="#0" style="color:var(--color-primary);">Learn more</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-7@md">
+
+                <div
+                  class="tilted-slideshow position-relative padding-top-md width-80% margin-x-auto width-70%@sm padding-top-0@md js-tilted-slideshow">
+                  <p class="sr-only">Tilted Image Slideshow</p>
+
+                  <ul class="tilted-slideshow__list position-relative perspective-xs js-tilted-slideshow__list">
+                    <li class="tilted-slideshow__item tilted-slideshow__item--top js-tilted-slideshow__item">
+                      <img src="assets/media/img/port1.png" alt="Image Description">
+                    </li>
+
+                    <li class="tilted-slideshow__item tilted-slideshow__item--middle js-tilted-slideshow__item">
+                      <img src="assets/media/img/port2.png" alt="Image Description">
+                    </li>
+
+                    <li class="tilted-slideshow__item tilted-slideshow__item--bottom js-tilted-slideshow__item">
+                      <img src="assets/media/img/port3.png" alt="Image Description">
+                    </li>
+
+                    <li class="tilted-slideshow__item tilted-slideshow__item--bottom js-tilted-slideshow__item">
+                      <img src="assets/media/img/port4.png" alt="Image Description">
+                    </li>
+                  </ul>
+
+                  <span class="tilted-slideshow__touch-hint" aria-hidden="true">Tap to change image</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <div class="noise-bg position-absolute inset-0" aria-hidden="true">
+        <svg>
+          <filter id="noise-bg-fx">
+            <feTurbulence baseFrequency="0.8" />
+          </filter>
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/imagescript.js"></script>
+  <script>
+    setTimeout(function () {
+      var element = document.getElementById("scrollDown1");
+      element.classList.add("animate__wobble");
+    }, (5 * 1000));
+  </script>
 </body>
 
 </html>
