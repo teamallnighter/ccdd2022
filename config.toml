@@ -59,6 +59,7 @@ URL = "about"
 name = "About"
 weight = 1
 [params]
+<<<<<<< refs/remotes/origin/master
 author = "Themefisher"
 description = "This is meta description"
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
@@ -116,3 +117,51 @@ link = "#"
 [[params.social]]
 icon = "ti-instagram"
 link = "#"
+=======
+logo = "images/logo.png"
+home = "Home"
+# Meta data
+description = "This is meta description"
+author = "chrisConnellyDotDev"
+# google map
+gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCDUrJQixpBNVKD-lJcmLHRRfkw8dXRccs&libraries=places"
+mapLatitude = "51.100159"
+mapLongitude = "-113.950508"
+mapMarker = "images/marker.png"
+# Google Analitycs
+googleAnalitycsID = "UA-168676797-1"
+  # Preloader
+  [params.preloader]
+  enable = true
+
+  ############################# Footer Start ###########################
+
+  # footer about
+  [params.footer.about]
+  about = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, odit? Sapiente et temporibus qui corporis veritatis ipsa culpa, numquam id."
+
+  # contact form
+  [params.form]
+  formAction = "#"
+
+  # copyright
+  [params.copyright]
+  copyright = "Copyright &copy; 2019 a theme by [themefisher.com](https://themefisher.com)"
+
+  ######################### Social site ##############################
+  [[params.social]]
+  icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
+  link = "https://facebook.com/chrisconnellydotdev"
+  
+  [[params.social]]
+  icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+  link = "#"
+  
+  [[params.social]]
+  icon = "ti-github" # themify icon pack https://themify.me/themify-icons
+  link = "https://github.com/teamallnighter"
+  
+  [[params.social]]
+  icon = "ti-instagram" # themify icon pack https://themify.me/themify-icons
+  link = "#"
+>>>>>>> Updating Params
