@@ -59,7 +59,7 @@ URL = "about"
 name = "About"
 weight = 1
 [params]
-logo = "images/logo.png"
+logo = "images/logo.webp"
 home = "Home"
 # Meta data
 description = "This is meta description"
