@@ -59,65 +59,6 @@ URL = "about"
 name = "About"
 weight = 1
 [params]
-<<<<<<< refs/remotes/origin/master
-author = "Themefisher"
-description = "This is meta description"
-gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-googleAnalitycsID = "Your ID"
-home = "Home"
-logo = "images/logo.png"
-mapLatitude = "51.5223477"
-mapLongitude = "-0.1622023"
-mapMarker = "images/marker.png"
-[params.copyright]
-copyright = "Copyright &copy; 2019 a theme by [themefisher.com](https://themefisher.com)"
-[params.footer.about]
-about = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, odit? Sapiente et temporibus qui corporis veritatis ipsa culpa, numquam id."
-[params.form]
-formAction = "#"
-[[params.plugins.css]]
-URL = "plugins/bootstrap/bootstrap.min.css"
-[[params.plugins.css]]
-URL = "plugins/slick/slick.css"
-[[params.plugins.css]]
-URL = "plugins/themify-icons/themify-icons.css"
-[[params.plugins.css]]
-URL = "plugins/venobox/venobox.css"
-[[params.plugins.css]]
-URL = "plugins/card-slider/css/style.css"
-[[params.plugins.js]]
-URL = "plugins/jQuery/jquery.min.js"
-[[params.plugins.js]]
-URL = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-URL = "plugins/slick/slick.min.js"
-[[params.plugins.js]]
-URL = "plugins/venobox/venobox.min.js"
-[[params.plugins.js]]
-URL = "plugins/shuffle/shuffle.min.js"
-[[params.plugins.js]]
-URL = "plugins/counto/apear.js"
-[[params.plugins.js]]
-URL = "plugins/counto/counTo.js"
-[[params.plugins.js]]
-URL = "plugins/card-slider/js/card-slider-min.js"
-[[params.plugins.js]]
-URL = "plugins/google-map/gmap.js"
-[params.preloader]
-enable = true
-[[params.social]]
-icon = "ti-facebook"
-link = "#"
-[[params.social]]
-icon = "ti-twitter-alt"
-link = "#"
-[[params.social]]
-icon = "ti-github"
-link = "#"
-[[params.social]]
-icon = "ti-instagram"
-link = "#"
-=======
 logo = "images/logo.png"
 home = "Home"
 # Meta data
@@ -164,4 +105,3 @@ googleAnalitycsID = "UA-168676797-1"
   [[params.social]]
   icon = "ti-instagram" # themify icon pack https://themify.me/themify-icons
   link = "#"
->>>>>>> Updating Params
