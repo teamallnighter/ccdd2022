@@ -1,12 +1,12 @@
 ############################## Banner ###################################
 banner:
   bgImage : "images/banner/banner2.jpg"
-  title : "Creative Agency"
+  title : "chrisConnellyDotDev"
 
 ########################### services ##################################
 service:
   enable : true
-  title : "Our Services"
+  title : "My Services"
   subtitle : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat."
@@ -43,7 +43,7 @@ feature:
 promo:
   enable : true
   bgImage : "images/backgrounds/about-bg.jpg"
-  title : "Who We Are"
+  title : "Who am I"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   videoURL : "https://www.youtube.com/watch?v=jrkvirglgaQ"
   button:
@@ -55,13 +55,13 @@ promo:
 ############################## project ####################################
 project:
   enable : true
-  title : "Our Feature Works"
+  title : "My Feature Works"
   # project item comes from 'project.yml'
   
 ################################## call to action ###########################
 cta:
   enable : true
-  title : "Let's Start With Us!"
+  title : "Let's Start With Me!"
   bgImage : "images/backgrounds/cta-bg.jpg"
   content : "Lorem ipsum dolor sit amet, magna habemus ius ad"
   button : 
@@ -73,7 +73,7 @@ cta:
 ############################## pricing ######################################
 pricing:
   enable : true
-  title : "Our Smart Pricing Table"
+  title : "My Smart Pricing Table"
   # pricing table comes from 'pricing.yml'
 
 

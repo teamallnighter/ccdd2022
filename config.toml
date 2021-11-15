@@ -1,7 +1,7 @@
 ################################### Default Configuration ############################
-baseURL = "https://exampleSite.com"
+baseURL = "https://ccdd-hugo-2022.netlify.app"
 languageCode = "en-us"
-title = "Agen | Bootstrap Agency Template"
+title = "ccdd | Web Design Freelancer"
 theme = "agen-hugo"
 
 #################################### Plugins ##########################################
@@ -147,7 +147,7 @@ googleAnalitycsID = "Your ID"
 
   # copyright
   [params.copyright]
-  copyright = "Copyright &copy; 2019 a theme by [themefisher.com](https://themefisher.com)"
+  copyright = ""
 
   ######################### Social site ##############################
   [[params.social]]
