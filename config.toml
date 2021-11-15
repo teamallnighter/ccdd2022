@@ -87,7 +87,7 @@ googleAnalitycsID = "UA-168676797-1"
 
   # copyright
   [params.copyright]
-  copyright = "Copyright &copy; 2019 a theme by [themefisher.com](https://themefisher.com)"
+  copyright = "Copyright &copy; 2022 by [chrisConnellyDotDev](https://chrisconnelly.dev)"
 
   ######################### Social site ##############################
   [[params.social]]
