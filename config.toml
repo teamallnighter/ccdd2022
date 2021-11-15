@@ -1,7 +1,7 @@
 ################################### Default Configuration ############################
-baseURL = "https://exampleSite.com"
+baseURL = "https://ccdd-hugo-2022.netlify.app"
 languageCode = "en-us"
-title = "Agen | Bootstrap Agency Template"
+title = "Web Design | chrisConnellyDotDev"
 theme = "agen-hugo"
 
 #################################### Plugins ##########################################
