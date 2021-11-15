@@ -1,167 +1,118 @@
-################################### Default Configuration ############################
 baseURL = "https://ccdd-hugo-2022.netlify.app"
 languageCode = "en-us"
-title = "Web Design | chrisConnellyDotDev"
 theme = "agen-hugo"
-
-#################################### Plugins ##########################################
-[params.plugins]
-
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "plugins/slick/slick.css"
-  [[params.plugins.css]]
-  URL = "plugins/themify-icons/themify-icons.css"
-  [[params.plugins.css]]
-  URL = "plugins/venobox/venobox.css"
-  [[params.plugins.css]]
-  URL = "plugins/card-slider/css/style.css"
-
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "plugins/jQuery/jquery.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/bootstrap/bootstrap.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/slick/slick.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/venobox/venobox.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/shuffle/shuffle.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/counto/apear.js"
-  [[params.plugins.js]]
-  URL = "plugins/counto/counTo.js"
-  [[params.plugins.js]]
-  URL = "plugins/card-slider/js/card-slider-min.js"
-  [[params.plugins.js]]
-  URL = "plugins/google-map/gmap.js"
-
-
-###################################### Navigation ######################################
-[menu]
-    
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight = 2
-  
-  [[menu.main]]
-  name = "Service"
-  URL = "service"
-  weight = 3
-  
-  [[menu.main]]
-  name = "Projects"
-  URL = "projects"
-  weight = 4
-
-  [[menu.main]]
-  name = "pages"
-  weight = 5
-  hasChildren = true
-
-    [[menu.main]]
-    parent = "pages"
-    name = "Team"
-    URL = "team"
-    
-    [[menu.main]]
-    parent = "pages"
-    name = "Blog"
-    URL = "blog"
-    
-    [[menu.main]]
-    parent = "pages"
-    name = "Career"
-    URL = "career"
-    
-    [[menu.main]]
-    parent = "pages"
-    name = "FAQs"
-    URL = "faqs"
-
-    [[menu.main]]
-    parent = "pages"
-    name = "Pricing"
-    URL = "pricing"
-  
-  [[menu.main]]
-  name = "Contact"
-  URL = "contact"
-  weight = 6
-
-  ############################# Footer menu ################################
-  [[menu.footer]]
-  name = "About"
-  URL = "about"
-  weight = 2
-  
-  [[menu.footer]]
-  name = "Service"
-  URL = "service"
-  weight = 3
-  
-  [[menu.footer]]
-  name = "Portfolio"
-  URL = "portfolio"
-  weight = 4
-  
-  [[menu.footer]]
-  name = "Contact"
-  URL = "contact"
-  weight = 5
-
-
-
-########################### Default parameters ##########################
+title = "Web Design | chrisConnellyDotDev"
+[[menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 4
+[[menu.footer]]
+URL = "portfolio"
+name = "Portfolio"
+weight = 3
+[[menu.footer]]
+URL = "service"
+name = "Service"
+weight = 2
+[[menu.footer]]
+URL = "about"
+name = "About"
+weight = 1
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+parent = "pages"
+weight = 1
+[[menu.main]]
+URL = "faqs"
+name = "FAQs"
+parent = "pages"
+weight = 2
+[[menu.main]]
+URL = "career"
+name = "Career"
+parent = "pages"
+weight = 3
+[[menu.main]]
+URL = "pricing"
+name = "Pricing"
+parent = "pages"
+weight = 4
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 5
+[[menu.main]]
+hasChildren = true
+name = "pages"
+weight = 4
+[[menu.main]]
+URL = "projects"
+name = "Projects"
+weight = 3
+[[menu.main]]
+URL = "service"
+name = "Service"
+weight = 2
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
 [params]
-logo = "images/logo.png"
-home = "Home"
-# Meta data
-description = "This is meta description"
 author = "Themefisher"
-# google map
+description = "This is meta description"
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+googleAnalitycsID = "Your ID"
+home = "Home"
+logo = "images/logo.png"
 mapLatitude = "51.5223477"
 mapLongitude = "-0.1622023"
 mapMarker = "images/marker.png"
-# Google Analitycs
-googleAnalitycsID = "Your ID"
-
-  # Preloader
-  [params.preloader]
-  enable = true
-
-  ############################# Footer Start ###########################
-
-  # footer about
-  [params.footer.about]
-  about = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, odit? Sapiente et temporibus qui corporis veritatis ipsa culpa, numquam id."
-
-  # contact form
-  [params.form]
-  formAction = "#"
-
-  # copyright
-  [params.copyright]
-  copyright = "Copyright &copy; 2019 a theme by [themefisher.com](https://themefisher.com)"
-
-  ######################### Social site ##############################
-  [[params.social]]
-  icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
-  link = "#"
-  
-  [[params.social]]
-  icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
-  link = "#"
-  
-  [[params.social]]
-  icon = "ti-github" # themify icon pack https://themify.me/themify-icons
-  link = "#"
-  
-  [[params.social]]
-  icon = "ti-instagram" # themify icon pack https://themify.me/themify-icons
-  link = "#"
+[params.copyright]
+copyright = "Copyright &copy; 2019 a theme by [themefisher.com](https://themefisher.com)"
+[params.footer.about]
+about = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, odit? Sapiente et temporibus qui corporis veritatis ipsa culpa, numquam id."
+[params.form]
+formAction = "#"
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+URL = "plugins/venobox/venobox.css"
+[[params.plugins.css]]
+URL = "plugins/card-slider/css/style.css"
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+URL = "plugins/venobox/venobox.min.js"
+[[params.plugins.js]]
+URL = "plugins/shuffle/shuffle.min.js"
+[[params.plugins.js]]
+URL = "plugins/counto/apear.js"
+[[params.plugins.js]]
+URL = "plugins/counto/counTo.js"
+[[params.plugins.js]]
+URL = "plugins/card-slider/js/card-slider-min.js"
+[[params.plugins.js]]
+URL = "plugins/google-map/gmap.js"
+[params.preloader]
+enable = true
+[[params.social]]
+icon = "ti-facebook"
+link = "#"
+[[params.social]]
+icon = "ti-twitter-alt"
+link = "#"
+[[params.social]]
+icon = "ti-github"
+link = "#"
+[[params.social]]
+icon = "ti-instagram"
+link = "#"
