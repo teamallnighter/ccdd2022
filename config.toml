@@ -2,6 +2,7 @@
 baseURL = "https://ccdd-hugo-2022.netlify.app"
 languageCode = "en-us"
 title = "ccdd | Web Design Freelancer"
+subtitle = "Affordable Web Design"
 theme = "agen-hugo"
 
 #################################### Plugins ##########################################

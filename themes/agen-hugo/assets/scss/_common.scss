@@ -83,12 +83,20 @@ a:hover {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.downer{
+  margin-top:20vh;
 }
 
 .bg-contain {
   background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .border-primary {
@@ -300,6 +308,12 @@ textarea.form-control {
 /* page-title */
 .page-title {
   padding: 170px 0 190px;
+}
+
+#title-wrapper, #title-wrapper-2, #title-wrapper-3, #bg-cover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* /page-title */
